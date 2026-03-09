@@ -1,0 +1,298 @@
+
+<!-- saved from url=(0061)https://web.cs.ucla.edu/~palsberg/course/cs132/F14/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>UCLA CS 132 Compiler Construction</title>
+</head>
+
+<body>
+<h1><center>UCLA CS 132 Compiler Construction Fall 2014</center></h1>
+<ul>
+<li>Time and place: Tue, Thu 2:00-3:50pm, Boelter 5440.
+</li><li>Professor: <a href="http://www.cs.ucla.edu/~palsberg">Jens Palsberg</a>, 
+4732 Boelter Hall
+(palsberg@ucla.edu).
+</li><li>Teaching assistant: 
+<!--a href=""-->John Bender (TA Office).
+</li><li><!--a href=""-->Office hours. 
+Jens:  upon request, send me email.
+John: TBA.
+</li><li>Course topics: compiler structure; lexical and syntactic analysis; 
+semantic analysis and code generation; theory of parsing. 
+</li><li>Course objective: understand compilers and build one yourself!
+</li><li>Requisites: CS 32, 35L, 131, 181.
+</li><li>The discussion website is 
+<a href="http://www.piazza.com/">Piazza</a>.
+Piazza gets you help fast and efficiently 
+from classmates, the TA, and the professor. 
+Please post your questions on  
+<a href="http://www.piazza.com/">Piazza</a>
+instead of emailing questions to the TA or the professor.
+</li><li>Book: 
+Andrew Appel with Jens Palsberg, 
+<a href="http://www.amazon.com/exec/obidos/tg/detail/-/052182060X/qid=1064539117/sr=1-1/ref=sr_1_1/103-6967686-9179848?v=glance&amp;s=books">
+Modern Compiler Implementation in Java</a>, 
+2nd edition.
+Cambridge University Press, 2002.
+</li><li>Paper: Massimiliano Poletto and Vivek Sarkar, 
+<a href="http://www.cs.ucla.edu/~palsberg/course/cs132/linearscan.pdf">Linear Scan Register Allocation</a>, 
+ACM <a href="http://www.cs.utexas.edu/~toplas">TOPLAS</a> 21(5):895-913, 1999.
+</li><li>Lectures: 
+(<a href="http://www.cs.ucla.edu/~palsberg/course/cs132/color-lecturenotes.pdf">Lecture Notes</a>, 
+ <a href="http://www.cs.ucla.edu/~palsberg/course/cs132/lec.pdf">black and white</a>)
+<table>
+<tbody><tr valign="top">
+<td>
+1.
+</td>
+<td>
+Thu Oct 2, Tue Oct 7:
+Introduction, lexical analysis. Appel Ch. 1-2, Notes Ch. 1-2.
+</td>
+</tr>
+<tr valign="top">
+<td>
+2.
+</td>
+<td>
+Thu Oct 9:
+LL parsing. Appel Ch. 3.1-3.2, Notes Ch. 3.
+</td>
+</tr>
+<tr valign="top">
+<td>
+3.
+</td>
+<td>
+Tue Oct 14: JavaCC and JTB. Notes Ch. 5.
+</td>
+</tr>
+<tr valign="top">
+<td>
+4.
+</td>
+<td>
+Thu Oct 16, Tue Oct 21: Semantic analysis. Appel Ch. 5+14, Notes Ch. 6,
+<a href="http://www.cs.ucla.edu/~palsberg/course/cs132/miniJava-typesystem.pdf">The MiniJava Type System</a>.
+</td>
+</tr>
+<tr valign="top">
+<td>
+5.
+</td>
+<td>
+Thu Oct 23, Tue Oct 28: Translation.
+Appel Ch. 7, 8, Notes Ch. 7.
+</td>
+</tr>
+<tr valign="top">
+<td>
+6.
+</td>
+<td>
+Thu Oct 30: Liveness analysis.
+Appel Ch. 10, Notes Ch. 8.
+</td>
+</tr>
+<tr valign="top">
+<td>
+7.
+</td>
+<td>
+Tue Nov 4, Thu Nov 6: Register allocation.
+Appel Ch. 11, Notes Ch. 8.
+The paper on linear scan register allocation.
+</td>
+</tr>
+<tr valign="top">
+<td>
+8.
+</td>
+<td>
+Thu Nov 13: Activation records. Appel Ch. 6, Notes Ch. 9.
+</td>
+</tr>
+<tr valign="top">
+<td>
+9.
+</td>
+<td>
+Tue Nov 18: Review of Midterm material.
+</td>
+</tr>
+<tr valign="top">
+<td>
+10.
+</td>
+<td>
+Tue Nov 25: Discussion of Homework 3.
+</td>
+</tr>
+<tr valign="top">
+<td>
+11.
+</td>
+<td>
+Tue Dec 2: Discussion of Homeworks 4+5.
+</td>
+</tr>
+<tr valign="top">
+<td>
+12.
+</td>
+<td>
+Thu Dec 4: LR parsing. Appel Ch 3.3, Notes Ch. 4.
+</td>
+</tr>
+<tr valign="top">
+<td>
+13.
+</td>
+<td>
+Tue Dec 9: Control-flow analysis.
+</td>
+</tr>
+<tr valign="top">
+<td>
+14.
+</td>
+<td>
+Thu Dec 11: Review of Final Exam material.
+</td>
+</tr>
+</tbody></table>
+
+
+</li><li>
+Homework:
+<a href="http://cs.ucla.edu/classes/spring11/cs132/hw/hw1.html">
+homework 1</a>,
+<a href="http://cs.ucla.edu/classes/spring11/cs132/kannan/index.html">
+homeworks 2-5</a>.
+
+</li><li> <a href="http://www.cs.ucla.edu/~palsberg/course/cs132/hw2Handout.pdf">Getting started on Homework 2</a>.
+</li><li> Sample <a href="http://compilers.cs.ucla.edu/cs132/Main.java">Main.java</a>
+</li><li> Homework 2+3 <a href="http://www.cs.ucla.edu/~palsberg/course/cs132/hw2-3-survival-guide.html">survival guide</a>.
+</li><li> <a href="http://www.cs.ucla.edu/~palsberg/course/cs132/miniJava-typesystem.pdf">The MiniJava Type System</a>.
+</li><li> <a href="http://www.cs.ucla.edu/~palsberg/course/cs132/hw-tips.html">Homework submission tips</a>.
+</li><li>
+<b><font color="red">Submit your homework via <a href="http://ccle.ucla.edu/">CCLE</a></font></b>; 
+<a href="http://www.cs.ucla.edu/~palsberg/course/cs132/policies.html">
+grading policies</a>.
+</li><li>
+
+Deadlines:
+(late homework will not be accepted)
+<table>
+<tbody><tr>
+<td>
+  1.
+</td>
+<td>
+LL(1) parsing
+</td>
+<td align="right">
+5 %,
+</td>
+<td>
+due Fri Oct 17, at 11am.
+</td>
+</tr>
+<tr>
+<td>
+  2.
+</td>
+<td>
+Type checking of MiniJava
+&nbsp;
+&nbsp;
+</td>
+<td align="right">
+15 %,
+</td>
+<td>
+due Fri Nov 7, at 11am.
+</td>
+</tr>
+<tr>
+<td>
+  3.
+</td>
+<td>
+MiniJava -&gt; Vapor
+</td>
+<td align="right">
+15 %,
+</td>
+<td>
+due Wed Nov 26, at 11am.
+</td>
+</tr>
+<tr>
+<td>
+  4.
+</td>
+<td>
+Vapor -&gt; Vapor-M
+</td>
+<td align="right">
+10 %,
+</td>
+<td>
+due Fri Dec 12, at 11am.
+</td>
+</tr><tr>
+<td>
+  5.
+</td>
+<td>
+Vapor-M -&gt; MIPS
+</td>
+<td align="right">
+10 %,
+</td>
+<td>
+due Fri Dec 12, at 11am.
+</td>
+</tr>
+</tbody></table>
+</li><li>
+<a href="http://www.cs.ucla.edu/~palsberg/course/cs132/F14/midterm.pdf">Midterm exam</a> (15 %),
+<a href="http://www.cs.ucla.edu/~palsberg/course/cs132/F14/midterm-solution.pdf">solution</a>. 
+Thu Nov 20, 2:00pm - 3:30pm, in class.
+Closed book.
+The midterm exam covers
+the book (ch.3.1-3.2) and
+the lecture notes (ch.3).
+</li><li>
+<!--a href="http://www.cs.ucla.edu/~palsberg/course/cs132/F14/final.pdf"-->Final exam (30 %),
+<!--a href="http://www.cs.ucla.edu/~palsberg/course/cs132/F14/final-solution.pdf"-->solution. 
+Wed Dec 17, 3:00pm - 6:00pm, in the class room.
+Closed book.
+The final exam covers
+the book (ch.5-8,10,11), 
+the lecture notes (ch.6-9), 
+the paper on linear scan register allocation, and
+homework 2-6. 
+</li><li>
+Related 
+<a href="http://www.acm.org/education/curricula/ComputerScience2008.pdf">
+Computer Science Curriculum 2008 (CS2008)</a> bodies of knowledge:
+  <ul>
+  <li> PL/VirtualMachines
+  </li><li> PL/BasicLanguageTranslation
+  </li><li> PL/LanguageTranslationSystems
+  </li></ul>
+</li><li> 
+Related 
+<a href="http://sites.computer.org/ccse">
+IEEE/ACM Software Engineering 2004 (SE2004)</a> bodies of knowledge:
+  <ul>
+  <li> CMP.ct.7 State-based and table driven construction techniques
+  </li><li> CMP.ct.9 Grammar-based input processing (parsing)
+  </li><li> FND.mf.7 Finite State Machines, regular expressions
+  </li><li> FND.mf.8 Grammars
+  </li></ul>
+</li></ul>
+
+
+</body></html>
