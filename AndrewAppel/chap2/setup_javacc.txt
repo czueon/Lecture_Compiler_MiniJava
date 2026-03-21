@@ -5,8 +5,12 @@ $ wget https://repo1.maven.org/maven2/net/java/dev/javacc/javacc/7.0.13/javacc-7
 $ tar xvfz javacc-7.0.13.tar.gz
 $ mv javacc-javacc-7.0.13 javacc
 $ cd javacc
+$ cd javacc-javacc-7.0.13
 $ mkdir target 
-$ mv ../javacc-7.0.13.jar ./target/javacc.jar
+$ mv ../../javacc-7.0.13.jar ./target/javacc.jar
 $ chmod ugo+x scripts/javacc
 $ export PATH=`pwd`/scripts/:$PATH
 $ which javacc
+
+$ cd ..
+$ javacc MiniJavaLexer.jj
