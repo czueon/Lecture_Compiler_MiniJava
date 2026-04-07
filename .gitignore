@@ -1,0 +1,7 @@
+*.class
+
+pdf/
+out/
+
+AndrewAppel/chap2/javacc/javacc-javacc-7.0.13
+AndrewAppel/chap2/javacc-7.0.13.tar.gz
