@@ -7,7 +7,39 @@ PARSER_BEGIN(MiniJavaParser)
 PARSER_END(MiniJavaParser)
 
 
-// Insert a specification of a lexical analysis here. 
+SKIP : {
+  " " | "\t" | "\r" | "\n"
+}
+
+SPECIAL_TOKEN : {
+  <SINGLE_LINE_COMMENT: "//" (~["\n","\r"])* ("\n"|"\r"|"\r\n")>
+| <MULTI_LINE_COMMENT: "/*" (~["*"])* "*" (~["/"] (~["*"])* "*")* "/">
+}
+
+TOKEN : {
+  <CLASS: "class">
+| <PUBLIC: "public">
+| <STATIC: "static">
+| <VOID: "void">
+| <MAIN: "main">
+| <STRING: "String">
+| <EXTENDS: "extends">
+| <RETURN: "return">
+| <INT: "int">
+| <BOOLEAN: "boolean">
+| <IF: "if">
+| <ELSE: "else">
+| <WHILE: "while">
+| <PRINTLN: "System.out.println">
+| <LENGTH: "length">
+| <TRUE: "true">
+| <FALSE: "false">
+| <THIS: "this">
+| <NEW: "new">
+| <#DIGIT: ["0"-"9"]>
+| <IDENTIFIER: ["a"-"z","A"-"Z"] (["a"-"z","A"-"Z","0"-"9","_"])*>
+| <INTEGER_LITERAL: (<DIGIT>)+>
+}
 
 
 // The following is a simple grammar that will allow you
@@ -31,5 +63,3 @@ void MiniJavaToken():
   "length" | <INTEGER_LITERAL> | "true" | "false" | "this" | "new" |
   "!"
 }
-
-
